@@ -1,14 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-resources:
-- deployment.yaml
-- service.yaml
-- route.yaml
-commonLabels:
-  app: carsten-next-app
-  app.kubernetes.io/instance: carsten-next-app-instance
-  app.kubernetes.io/name: carsten-next-app
 images:
 - name: '*'
   newName: quay.io/carstenmichel/carsten-next-app
-  newTag: f6004eae426689eabb82421d5054657c5f3c797c
+  newTag: 62aa32beaddf27496ca9c7e1555c4db122a599bf
