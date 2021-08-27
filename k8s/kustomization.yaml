@@ -5,9 +5,9 @@ resources:
 - service.yaml
 - route.yaml
 commonLabels:
-  app: e2e-next-app
-  app.kubernetes.io/instance: e2e-next-app-instance
-  app.kubernetes.io/name: e2e-next-app
+  app: carsten-e2e-pipeline
+  app.kubernetes.io/instance: carsten-e2e-pipeline-instance
+  app.kubernetes.io/name: carsten-e2e-pipeline
 images:
 - name: '*'
   newName: quay.io/carstenmichel/carsten-next-app
